@@ -1,0 +1,17 @@
+name: rendezvous-hash
+version: 0.1.0
+
+dependencies:
+  murmur3:
+    github: kuende/murmur3
+
+development_dependencies:
+  ameba:
+    github: veelenga/ameba
+
+authors:
+  - Caspian Baska <caspianbaska@gmail.com>
+
+crystal: 0.29.0
+
+license: MIT
