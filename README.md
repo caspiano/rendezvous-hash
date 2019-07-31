@@ -42,6 +42,11 @@ hash.find("device1")  # => "node3"
 
 - [clandestined](https://github.com/ewdurbin/clandestined-ruby)
 
+## Todo
+
+- Benchmarking
+- murmur3 seeding
+
 ## Contributing
 
 1. [Fork it](https://github.com/caspiano/rendezvous-hash/fork)
