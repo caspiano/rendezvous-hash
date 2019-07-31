@@ -1,5 +1,7 @@
 # rendezvous-hash
 
+[![Build Status](https://travis-ci.org/caspiano/rendezvous-hash.svg?branch=master)](https://travis-ci.org/caspiano/rendezvous-hash)
+
 Rendezvous hashing for crystal that utilises the [murmur3](https://github.com/kuende/murmur3) hashing algorithm.
 
 ## Installation
