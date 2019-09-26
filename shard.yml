@@ -3,15 +3,17 @@ version: 0.1.0
 
 dependencies:
   murmur3:
-    github: kuende/murmur3
+    github: aca-labs/murmur3
+    branch: master
 
 development_dependencies:
   ameba:
-    github: veelenga/ameba
+    github: crystal-ameba/ameba
+    version: ~> 0.10.1
 
 authors:
   - Caspian Baska <caspianbaska@gmail.com>
 
-crystal: 0.29.0
+crystal: 0.31.0
 
 license: MIT
