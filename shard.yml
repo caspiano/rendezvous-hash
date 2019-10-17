@@ -1,5 +1,7 @@
 name: rendezvous-hash
 version: 0.2.0
+crystal: 0.31.1
+license: MIT
 
 dependencies:
   murmur3:
@@ -13,7 +15,3 @@ development_dependencies:
 
 authors:
   - Caspian Baska <caspianbaska@gmail.com>
-
-crystal: 0.31.1
-
-license: MIT

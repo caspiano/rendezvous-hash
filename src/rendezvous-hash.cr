@@ -27,11 +27,14 @@ class RendezvousHash
   end
 
   def find!(key : String) : String
-    raise IndexError.new unless @nodes.size > 0
-    find(key).as(String)
+    raise IndexError.new unless (node = find(key))
+
+    node
   end
 
   def find(key : String) : String?
+    return nil unless @nodes.size > 0
+
     @nodes.reduce({"", -1}) do |(best_node, best_score), current_node|
       score = @hash_function.call("#{current_node}-#{key}")
       if score > best_score
@@ -42,6 +45,6 @@ class RendezvousHash
       else
         ({best_node, best_score})
       end
-    end.first?
+    end.first
   end
 end
