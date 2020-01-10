@@ -24,6 +24,14 @@ describe RendezvousHash do
     end
   end
 
+  it "replaces nodes" do
+    r_hash = RendezvousHash.new(nodes: ["node0"])
+    r_hash.nodes.size.should eq 1
+
+    r_hash.replace_nodes(["node0", "node1", "node2"])
+    r_hash.remove?("node0").should_not be_nil
+  end
+
   describe "find" do
     it "locates a node" do
       r_hash = RendezvousHash.new(nodes: ["node0", "node1"])

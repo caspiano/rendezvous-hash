@@ -15,6 +15,10 @@ class RendezvousHash
     @nodes
   end
 
+  def replace_nodes(nodes : Array(String))
+    @nodes = nodes
+  end
+
   def remove(node : String) : String
     deleted = @nodes.delete(node)
     raise ArgumentError.new("Missing rendezvous hash node: #{node}") unless deleted
