@@ -23,6 +23,14 @@ class RendezvousHash
     nodes.delete(node)
   end
 
+  def [](key)
+    find(key)
+  end
+
+  def []?(key)
+    find?(key)
+  end
+
   def find(key : String) : String
     raise IndexError.new unless (node = find?(key))
 

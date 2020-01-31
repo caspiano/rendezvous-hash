@@ -51,5 +51,14 @@ describe RendezvousHash do
       r_hash.remove("node0")
       r_hash.find("Pomeranz").should eq "node1"
     end
+
+    it "allows indexing" do
+      r_hash = RendezvousHash.new
+      r_hash.nodes.size.should eq 0
+
+      r_hash.add("node0").should eq ["node0"]
+      r_hash.nodes.size.should eq 1
+      r_hash["node0"].should eq "node0"
+    end
   end
 end

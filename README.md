@@ -38,6 +38,8 @@ hash.add("node3")     # => ["node1", "node2", "node3"]
 
 hash.find("device1")  # => "node3"
 
+hash["device1"]  # => "node3"
+
 ```
 
 ## Credit
